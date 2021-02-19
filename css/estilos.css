@@ -1,0 +1,265 @@
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+.imagenEncabezado{
+	background: url(../archivos/teamWork.jpg);
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+/*VIDEO DE FONDO INICIO*/
+
+#videoInicio{
+  position: fixed;
+  z-index: -100;
+  opacity: .4;
+}
+
+@media (min-aspect-ratio: 16/9){
+  #videoInicio{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9){
+  #videoInicio{
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media (max-width: 767px){
+  #videoInicio{
+    display: none;
+  }
+  body{
+    background: url(./archivos/videoInicio2.PNG);
+    background-size: cover;
+  }
+}
+
+/*BOTON DE MENU RESPONSIVE*/
+
+.custom-toggler.navbar-toggler {
+    border-color: #000;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/*BARRA DE NAVEGACION*/
+
+.negro{
+	background: rgba(0,0,0,.4);
+	
+}
+
+.top-nav-collapse{
+	background: rgba(0,0,0,.75) !important;
+}
+
+
+.imagenYo{
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h3 a{
+	color: #000;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h3 a:hover {
+	color: #5d2904;
+}
+
+/*FOOTER*/
+
+footer{
+	background: #111;
+	height: auto;
+	width: 100vw;
+	font-family: Open Sans, Helvetica, sans-serif;
+	padding-top: 40px;
+	color: #fff;
+}
+
+.footerContent{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.footerContent h3{
+	font-size: 1,8rem;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 3rem;
+}
+
+.footerContent p{
+	max-width: 500px;
+	margin: 10px auto;
+	line-height: 28px;
+	font-size: 14px;
+}
+
+.redes{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	margin: 1rem 0 3rem 0;
+}
+
+.redes li{
+	margin: 0 10px;
+}
+
+.redes a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.redes a i{
+	font-size: 1.1rem;
+	transition: color .4s ease;
+}
+
+.redes a:hover i{
+	color: #5d2904;
+}
+
+.footerFinal{
+	background: #000;
+	width: 100vw;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.footerFinal p{
+	font-size: 14px;
+	word-spacing: 2px;
+	font-style: italic;
+	opacity: .5;
+}
+
+/*ESTRUCTURA BASE*/
+
+html,
+body {
+  height: 100%;
+
+}
+body {
+  color: #000;
+  text-align: center;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+ 
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: center;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+/*
+ * Header
+ */
+
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: bold;
+  color: #000;
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: #6E6A6A;
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #000;
+  border-bottom-color: #000;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 1.5rem;
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 40em) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 62em) {
+  .masthead,
+  .cover-container {
+    width: 42rem;
+  }
+}
