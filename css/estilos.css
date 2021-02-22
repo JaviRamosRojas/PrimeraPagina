@@ -1,3 +1,6 @@
+/*LETRA LINEA DE TIEMPO*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
 /* Links */
 a,
 a:focus,
@@ -153,113 +156,192 @@ footer{
 	opacity: .5;
 }
 
-/*ESTRUCTURA BASE*/
+/*ICONOS CV*/
+.iconosCv{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  margin: 1rem 0 3rem 0;
+}
 
-html,
-body {
+.iconosCv li{
+  margin: 0 10px;
+}
+
+.pdf{
+  text-decoration: none;
+  color: #ac2200;
+}
+
+.word{
+  text-decoration: none;
+  color: #2b569a;
+}
+
+.iconosCv a i{
+  font-size: 5rem;
+  transition: color .4s ease;
+}
+
+.iconosCv a:hover i{
+  color: #5d2904;
+}
+
+/*LINEA DE TIEMPO*/
+
+.lineaTiempo{
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  margin: 50px auto;
+  padding: 40px 0;
+  width: 1000px;
+}
+
+.lineaTiempo:before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 2px;
   height: 100%;
-
-}
-body {
-  color: #000;
-  text-align: center;
+  background: #c5c5c5;
 }
 
-/* Extra markup and styles for table-esque vertical and horizontal centering */
-.site-wrapper {
-  display: table;
-  width: 100%;
-  height: 100%; /* For at least Firefox */
-  min-height: 100%;
+.lineaTiempo li .contenido{
+  padding-bottom: 20px;
+}
+
+.lineaTiempo ul{
+  margin: 0;
+  padding: 0;
+}
+
+.lineaTiempo li{
+  list-style: none;
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+.lineaTiempo li:nth-child(odd){
+  float: left;
+  text-align: right;
+  clear: both;
+}
+
+.lineaTiempo li:nth-child(even){
+  float: right;
+  text-align: left;
+  clear: both;
+}
+
+.lineaTiempo li:nth-child(odd):before{
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: rgba(183,117,31,1);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(183,117,31,.2);
+  top: 35px;
+  right: -6px;
+}
+
+.lineaTiempo li:nth-child(even):before{
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: rgba(93,41,4,1);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(93,41,4,.3);
+  top: 35px;
+  left:-6px;
+}
+
+.lineaTiempo li h3{
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+}
+
+.h3Derecha{
+  color: rgba(93,41,4,1);
+}
+
+.h3Izquierda{
+  color: rgba(183,117,31,1);
+}
+
+.lineaTiempo li p{
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.lineaTiempo li .tiempo h4{
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.lineaTiempo li:nth-child(odd) .tiempo{
+  position: absolute;
+  top: 25px;
+  right: -180px;
+  margin: 0;
+  padding: 8px 16px;
+  background: rgba(183,117,31,1);
+  color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 0 0 3px rgba(183,117,31,.3);
+}
+
+.lineaTiempo li:nth-child(even) .tiempo{
+  position: absolute;
+  top: 25px;
+  left: -180px;
+  margin: 0;
+  padding: 8px 16px;
+  background: rgba(93,41,4,1);
+  color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 0 0 3px rgba(93,41,4,.3);
+}
+
+@media (max-width: 1000px){
+  .lineaTiempo{
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px){
+  .lineaTiempo{
+    width: 100%;
+    padding-bottom: 0;
+  }
+  .lineaTiempo:before{
+    left: 20px;
+  }
+  .lineaTiempo li:nth-child(even),
+  .lineaTiempo li:nth-child(odd){
+    width: 100%;
+    text-align: left;
+    padding-left: 50px;
+    padding-bottom: 50px; 
+  }
+  .lineaTiempo li:nth-child(even):before,
+  .lineaTiempo li:nth-child(odd):before{
+    top: -18px;
+    left: 16px;
+  }
+  .lineaTiempo li:nth-child(even) .tiempo,
+  .lineaTiempo li:nth-child(odd) .tiempo{
+    top: -30px;
+    left: 50px;
+    right: inherit;
+  }
+}
+
  
-}
-.site-wrapper-inner {
-  display: table-cell;
-  vertical-align: center;
-}
-.cover-container {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-
-/*
- * Header
- */
-
-.masthead {
-  margin-bottom: 2rem;
-}
-
-.nav-masthead .nav-link {
-  padding: .25rem 0;
-  font-weight: bold;
-  color: #000;
-  background-color: transparent;
-  border-bottom: .25rem solid transparent;
-}
-
-.nav-masthead .nav-link:hover,
-.nav-masthead .nav-link:focus {
-  border-bottom-color: #6E6A6A;
-}
-
-.nav-masthead .nav-link + .nav-link {
-  margin-left: 1rem;
-}
-
-.nav-masthead .active {
-  color: #000;
-  border-bottom-color: #000;
-}
-
-@media (min-width: 48em) {
-  .masthead-brand {
-    float: left;
-  }
-  .nav-masthead {
-    float: right;
-  }
-}
-
-
-/*
- * Cover
- */
-
-.cover {
-  padding: 0 1.5rem;
-}
-
-
-/*
- * Affix and center
- */
-
-@media (min-width: 40em) {
-  /* Pull out the header and footer */
-  .masthead {
-    position: fixed;
-    top: 0;
-  }
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
-  }
-  /* Start the vertical centering */
-  .site-wrapper-inner {
-    vertical-align: middle;
-  }
-  /* Handle the widths */
-  .masthead,
-  .cover-container {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
-  }
-}
-
-@media (min-width: 62em) {
-  .masthead,
-  .cover-container {
-    width: 42rem;
-  }
-}
