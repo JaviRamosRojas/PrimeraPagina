@@ -36,6 +36,15 @@
   }
 }
 
+.noDecoracion, h1 a, a:hover{
+  text-decoration: none;
+  color: #000;
+}
+
+h1 a:hover{
+  color: #5d2904;
+}
+
 /*BOTON DE MENU RESPONSIVE*/
 
 .navbar-dark .navbar-toggler{
