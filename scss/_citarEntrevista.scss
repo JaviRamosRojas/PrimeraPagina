@@ -1,0 +1,143 @@
+
+/*CITAR A ENTREVISTA*/
+
+.contacto{
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.contacto .contenido{
+  max-width: 800px;
+  text-align: center;
+}
+
+.contenedor{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.contenedor .contactoInfo{
+  width: 50%;
+  display: flex;
+  flex-direction: column; 
+}
+
+.contenedor .contactoInfo .caja{
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.contenedor .contactoInfo .caja .icono{
+  min-width: 60px;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.contenedor .contactoInfo .caja .icono a{
+  text-decoration: none;
+  color: #5d2904;
+}
+
+.contenedor .contactoInfo .caja .texto{
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #000;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+.contenedor .contactoInfo .caja .texto h2{
+  font-weight: 500;
+  color: #5d2904;
+}
+
+.formulario{
+  width: 40%;
+  padding: 40px;
+  background: #fff;
+}
+
+.formulario h2{
+  font-size: 30px;
+  color: #5d2904;
+  font-weight: 500;
+}
+
+.formulario .input{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.formulario .input input,
+.formulario .input textarea{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+.formulario .input span{
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+}
+
+.formulario .input input:focus ~ span,
+.formulario .input input:valid ~ span,
+.formulario .input textarea:focus ~ span,
+.formulario .input textarea:valid ~ span{
+  transform: translateY(-20px);
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #b7751f;
+}
+
+.formulario .input input[type="submit"]{
+  width: 100px;
+  background: #5d2904;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+@media (max-width: 991px){
+  .contacto{
+    padding: 50px;
+  }
+  .contenedor{
+    flex-direction: column;
+  }
+  .contenedor .contactoInfo{
+    margin-bottom: 40px;
+  }
+  .contenedor .contactoInfo, .formulario{
+    width: 100%
+  }
+}

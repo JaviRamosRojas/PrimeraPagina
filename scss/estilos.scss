@@ -1,0 +1,174 @@
+@import "footer";
+@import "acercaDeMi";
+@import "iconosCv";
+@import "lineaDeTiempo";
+@import "citarEntrevista";
+@import "logros";
+
+
+/*LETRA LINEA DE TIEMPO*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+/*LETRA HOJAS*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+/*VIDEO DE FONDO INICIO*/
+
+#videoInicio{
+  position: fixed;
+  z-index: -100;
+  opacity: .4;
+}
+
+@media (min-aspect-ratio: 16/9){
+  #videoInicio{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9){
+  #videoInicio{
+    width: auto;
+    height: 100%;
+  }
+}
+
+
+.noDecoracion, h1 a, a:hover{
+  text-decoration: none;
+  color: #000;
+}
+
+h1 a:hover{
+  color: #5d2904;
+}
+
+/*BOTON DE MENU RESPONSIVE*/
+
+.navbar-dark .navbar-toggler{
+  border: 1px solid rgba(0, 0, 0, 1)!important;
+}
+
+.navbar-toggler-icon{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")!important;
+}
+
+/*BARRA DE NAVEGACION*/
+
+.negro{
+	background: rgba(0,0,0,.4);	
+}
+
+.top-nav-collapse{
+	background: rgba(0,0,0,1) !important;
+  color: #fff;
+}
+
+.top-nav-collapse.navbar-dark .navbar-toggler{
+  border: 1px solid rgba(255, 255, 255, 1)!important;
+}
+
+.top-nav-collapse .navbar-toggler-icon{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")!important;
+}
+
+.navbar:hover{
+  background: rgba(0,0,0,.8);
+}
+
+.navbar-dark .navbar-toggler:hover{
+  border: 1px solid rgba(255, 255, 255, 1)!important;
+}
+
+.navbar-toggler-icon:hover{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")!important;
+}
+
+
+/*ESTILO HOJAS*/
+
+.primeraCaja{
+  display: block;
+  position: relative;
+  text-align: center;
+  height: calc(100vh - 5rem);
+  max-height: 700px;
+  min-height: 240px;
+  /*background: radial-gradient(circle, rgba(140,123,115,1) 0%, rgba(97,75,62,1) 100%);*/
+  background: url(../archivos/videoInicio2.PNG);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.primeraCaja h1{
+  padding-bottom: 200px;
+  font-size: 90px;
+  font-weight: 600;
+  color: #fff;
+  color: #5d2904;
+}
+
+.cajaFondo{
+  display: block;
+  position:relative;
+  z-index:1000;
+  background-color: #fff;
+
+}
+
+.segundaCaja{
+  position: relative;
+  margin: 0 auto 10rem;
+  padding: 5rem 0 5rem;
+  background-color: #fff;
+  box-shadow: 0 30px 50px 0 rgba(1,1,1,.25);
+}
+
+
+.cajaFondo .segundaCaja:first-child{
+  top:-150px;
+  position:relative;
+  z-index:100;
+  margin-bottom:0;
+}
+
+.contenido{
+  margin: 0 auto 5rem;
+  padding: 2rem;
+  color: #000;
+  font-family: 'Josefin Sans', sans-serif;
+  background:#fff;
+}
+
+.parallax{
+  height: 756px;
+  position: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: 00;
+  text-align: center;
+  justify-content: center;
+  padding: 155px 0 150px;
+  width: 100%
+}
+
+@media(max-width: 1040px){
+  .primeraCaja h1{
+  font-size: 70px;
+  }
+}
+
+@media (max-width: 700px){
+  .cajaFondo{
+    padding: 0;
+    margin: 0;
+  }
+  .primeraCaja h1{
+  font-size: 50px;
+  }
+}
+
+

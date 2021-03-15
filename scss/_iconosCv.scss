@@ -1,0 +1,31 @@
+/*ICONOS CV*/
+.iconosCv{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  margin: 1rem 0 3rem 0;
+}
+
+.iconosCv li{
+  margin: 0 10px;
+}
+
+.pdf{
+  text-decoration: none;
+  color: #ac2200;
+}
+
+.word{
+  text-decoration: none;
+  color: #2b569a;
+}
+
+.iconosCv a i{
+  font-size: 5rem;
+  transition: color .4s ease;
+}
+
+.iconosCv a:hover i{
+  color: #5d2904;
+}
