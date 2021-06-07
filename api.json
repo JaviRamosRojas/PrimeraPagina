@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "nombre": "Olaplex Paso 0",
+        "marca": "Olaplex",
+        "precio": 29900,
+        "imagenUrl": "imagenes/0.png"
+    },
+    {
+        "id": 2,
+        "nombre": "Olaplex Paso 3",
+        "marca": "Olaplex",
+        "precio": 26900,
+        "imagenUrl": "imagenes/3.png"
+    },
+    {
+        "id": 3,
+        "nombre": "Olaplex Paso 4",
+        "marca": "Olaplex",
+        "precio": 22990,
+        "imagenUrl": "imagenes/4.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Olaplex Paso 5",
+        "marca": "Olaplex",
+        "precio": 25000,
+        "imagenUrl": "imagenes/5.png"
+    },
+    {
+        "id": 5,
+        "nombre": "Olaplex Paso 6",
+        "marca": "Olaplex",
+        "precio": 22000,
+        "imagenUrl": "imagenes/6.png"
+    },
+    {
+        "id": 6,
+        "nombre": "Olaplex Paso 7",
+        "marca": "Olaplex",
+        "precio": 25500,
+        "imagenUrl": "imagenes/7.png"
+    },
+    {
+        "id": 7,
+        "nombre": "Olaplex Paso 8",
+        "marca": "Olaplex",
+        "precio": 29000,
+        "imagenUrl": "imagenes/8.jpg"
+    },
+    {
+        "id": 8,
+        "nombre": "Olaplex Paso 1 y 2",
+        "marca": "Olaplex",
+        "precio": 63900,
+        "imagenUrl": "imagenes/1_2.png"
+    }
+]
